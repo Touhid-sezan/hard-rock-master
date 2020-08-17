@@ -1,0 +1,92 @@
+body{
+    background-color: #13141b;
+    color: #ffffff;
+    background-image: url(images/bg-image.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+    text-align: center;
+}
+h1.text-center {
+    color: #0fcd67;
+}
+.form-control{
+    background-color:rgba(255, 255, 255, 0.2);
+    padding: 22px;
+    border: none;
+    border-radius: 25px;
+}
+#result h1{
+    text-align: center;
+    color: #0fcd67;
+}
+#red{
+    color: #ff0030;
+}
+.search-btn{
+    border-radius: 1.5rem;
+    padding: 9px 20px;
+}
+.search-box{
+    position: relative;
+}
+.search-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+.navbar-toggler {
+    border: none;
+}
+
+.song-list{
+    display: flex;
+    padding: 20px 50px;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50% ,0);
+    background: linear-gradient(to left, 
+    rgb(40, 40, 40),
+    rgb(40, 40, 40))
+
+}
+.song-list li{
+    margin-bottom: 20px;
+    width: 500px;
+    justify-content: space-evenly;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: overline;
+    text-decoration-color: rgb(12, 147, 100);
+    position: relative;
+}
+
+.song-list li::after{
+    content: "";
+    position: absolute;
+    right: 0px;
+    left: -20px;
+    bottom: -4px;
+    height: 3px;
+    background: rgb(12, 147, 100);
+    display: inline-block;
+}
+.song-list li div{
+    float: left;
+}
+
+.song-list li span{
+    float: right;
+    background-color: #28a745;
+    border: 0;
+    font-size: 12px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 400;
+    padding: 4px 10px;
+    text-transform: capitalize;
+}
